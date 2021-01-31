@@ -2,9 +2,9 @@ import React from 'react'
 import s from './style.module.css'
 
 const Layout = (props) => {
-    console.log(props)
-    const styleLayout = props.Bg ? {background : props.urlBg} : { background: props.colorBg}
-	return (
+    
+    const styleLayout = props.urlBg ? {background : `url(${props.urlBg})`} : { background: props.colorBg}
+    return (
 		<section className={s.root} id={props.id} >
             <div className={s.wrapper} style ={styleLayout}>
                 <article>

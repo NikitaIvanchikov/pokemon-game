@@ -5,7 +5,6 @@ const Header = ({
 	title,
 	descr
 }) => {
-	console.log(title, descr);
 	return (
 		<header className={s.root}>
 		    <div className={s.forest}></div>
